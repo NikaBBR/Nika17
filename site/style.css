@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Helvetica Neue', sans-serif;
+  color: black;
+  background: white;
+  line-height: 1.6;
+}
+
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+nav{
+  background: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: lightskyblue;
+}
+
+.nav-links a{
+  margin-left: 2rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover{
+  color: lightskyblue;
+}
+
+
+.bbr{
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.bbr-content{
+  color: white;
+}
+
+.bbr-content h1{
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.bbr-content p{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn{
+  background: blue;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background 0.3s;
+}
+
+.btn:hover{
+  background: blue;
+}
+
+
+#posts{
+  padding: 8rem 0 4rem 0;
+  background: white;
+}
+
+#posts h2{
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+  color: black;
+}
+
+.posts{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.post{
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px black;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.post:hover{
+  transform: translateY(-5px);
+}
+
+.post img{
+  width: 100%;
+  display: block;
+}
+
+.post h3{
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.5rem;
+  color: lightskyblue;
+}
+
+.post p{
+  padding: 0 1rem 1.5rem 1rem;
+  color: grey;
+}
+
+  /* ✅ Updated Card Section Styles */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    transition: transform 0.3s;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+  
+  .card-body h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    line-height: 1.4;
+    text-align: left;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: auto;
+  }
+
+
+#subscribe{
+  padding: 6rem 2rem;
+  background: lightskyblue;
+  color: white;
+  text-align: center;
+}
+
+.subscribe-container h2{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.subscribe-container p{
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.subscribe-container form{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.subscribe-container input[type="email"]{
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+  font-size: 1rem;
+}
+
+.subscribe-container button{
+  padding: 0.8rem 1.5rem;
+  background: white;
+  color: lightskyblue;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.subscribe-container button:hover{
+  background: white;
+}
